@@ -259,62 +259,12 @@
 
 
     <script src="script.js"></script>
-
-    <script>
-
-        const loginForm =
-            document.getElementById("loginForm");
-
-        if (loginForm) {
-
-            loginForm.addEventListener(
-                "submit",
-                function(event) {
-
-                    event.preventDefault();
-
-                    const email =
-                        document.getElementById("loginEmail").value;
-
-                
-                }
-            );
-
-        }
-
-
-        const forgotPassword =
-            document.getElementById("forgotPassword");
-
-        if (forgotPassword) {
-
-            forgotPassword.addEventListener(
-                "click",
-                function(event) {
-
-                    event.preventDefault();
-
-                    const email =
-                        prompt(
-                            "Please enter your email address:"
-                        );
-
-                    if (email) {
-
-                        alert(
-                            "Password reset instructions " +
-                            "have been sent to " + email
-                        );
-
-                    }
-
-                }
-            );
-
-        }
-
-    </script>
+    <script src="login.js"></script>
 
 </body>
+
+</html>
+
+
 
 </html>
