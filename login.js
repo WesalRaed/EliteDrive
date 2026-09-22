@@ -57,9 +57,7 @@ loginForm.addEventListener("submit", async function (event) {
             "Login successful!";
 
 
-        setTimeout(() => {
-            window.location.href = "rent.html";
-        }, 800);
+    window.location.assign("/rent.html");
 
 
     } catch (error) {
