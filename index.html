@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EliteDrive | Luxury Car Rental</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">
+            <span>ELITE</span><strong>DRIVE</strong>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="rent.html">Rent a Car</a>
+            <a href="#maintenance">Maintenance</a>
+            <a href="#roadside">Roadside Assistance</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="#" class="login-link">Login</a>
+            <a href="#" class="nav-btn">Sign Up</a>
+        </div>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+    </div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+
+        <div class="hero-text">
+
+            <span class="small-title">PREMIUM CAR RENTAL</span>
+
+            <h1>
+                Drive Your
+                <span>Dream.</span>
+            </h1>
+
+            <p>
+                Experience luxury, comfort and performance with our
+                premium collection of vehicles.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="rent.html" class="gold-btn">
+                    Explore Cars
+                    <span>→</span>
+                </a>
+
+                <a href="#about" class="outline-btn">
+                    Discover More
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="hero-bottom">
+        <div>
+            <strong>50+</strong>
+            <span>Premium Cars</span>
+        </div>
+
+        <div>
+            <strong>1,500+</strong>
+            <span>Happy Clients</span>
+        </div>
+
+        <div>
+            <strong>24/7</strong>
+            <span>Roadside Support</span>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- ================= BOOKING BAR ================= -->
+
+<section class="booking-wrapper">
+
+    <div class="container">
+
+        <div class="booking-card">
+
+            <div class="booking-title">
+                <span>01</span>
+                <div>
+                    <h3>Find Your Perfect Ride</h3>
+                    <p>Choose your dates and location</p>
+                </div>
+            </div>
+
+            <div class="booking-fields">
+
+                <div class="booking-field">
+                    <label>Pick-up Location</label>
+                    <select id="pickupLocation">
+                        <option value="">Select location</option>
+                        <option>Nablus</option>
+                        <option>Ramallah</option>
+                        <option>Jerusalem</option>
+                        <option>Hebron</option>
+                    </select>
+                </div>
+
+                <div class="booking-field">
+                    <label>Pick-up Date</label>
+                    <input type="date" id="pickupDate">
+                </div>
+
+                <div class="booking-field">
+                    <label>Return Date</label>
+                    <input type="date" id="returnDate">
+                </div>
+
+                <button class="search-btn" id="searchCars">
+                    Search Cars
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CARS ================= -->
+
+<section class="cars-section" id="cars">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="section-label">OUR COLLECTION</span>
+                <h2>Choose Your <span>Perfect Car</span></h2>
+            </div>
+
+            <a href="rent.html" class="view-all">
+                View All Cars →
+            </a>
+
+        </div>
+
+
+        <div class="cars-grid">
+
+            <!-- CAR 1 -->
+
+            <div class="car-card">
+
+                <div class="car-image">
+                    <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1200&q=85" alt="BMW 5 Series">
+
+                    <span class="car-tag">POPULAR</span>
+
+                    <button class="heart-btn">♡</button>
+                </div>
+
+                <div class="car-info">
+
+                    <div class="car-top">
+                        <div>
+                            <span class="car-brand">BMW</span>
+                            <h3>5 Series</h3>
+                        </div>
+
+                        <div class="rating">
+                            ★ 4.9
+                        </div>
+                    </div>
+
+                    <div class="car-details">
+                        <span>Automatic</span>
+                        <span>•</span>
+                        <span>5 Seats</span>
+                        <span>•</span>
+                        <span>Petrol</span>
+                    </div>
+
+                    <div class="car-bottom">
+
+                        <div class="price">
+                            <strong>$120</strong>
+                            <span>/ day</span>
+                        </div>
+
+                        <a href="rent.html" class="small-btn">
+                            Rent Now
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CAR 2 -->
+
+            <div class="car-card">
+
+                <div class="car-image">
+                    <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1200&q=85" alt="Mercedes">
+
+                    <button class="heart-btn">♡</button>
+                </div>
+
+                <div class="car-info">
+
+                    <div class="car-top">
+                        <div>
+                            <span class="car-brand">MERCEDES-BENZ</span>
+                            <h3>C-Class</h3>
+                        </div>
+
+                        <div class="rating">
+                            ★ 4.8
+                        </div>
+                    </div>
+
+                    <div class="car-details">
+                        <span>Automatic</span>
+                        <span>•</span>
+                        <span>5 Seats</span>
+                        <span>•</span>
+                        <span>Petrol</span>
+                    </div>
+
+                    <div class="car-bottom">
+
+                        <div class="price">
+                            <strong>$135</strong>
+                            <span>/ day</span>
+                        </div>
+
+                        <a href="rent.html" class="small-btn">
+                            Rent Now
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CAR 3 -->
+
+            <div class="car-card">
+
+                <div class="car-image">
+                    <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1200&q=85" alt="Lamborghini">
+
+                    <span class="car-tag">LUXURY</span>
+
+                    <button class="heart-btn">♡</button>
+                </div>
+
+                <div class="car-info">
+
+                    <div class="car-top">
+                        <div>
+                            <span class="car-brand">LAMBORGHINI</span>
+                            <h3>Huracan</h3>
+                        </div>
+
+                        <div class="rating">
+                            ★ 5.0
+                        </div>
+                    </div>
+
+                    <div class="car-details">
+                        <span>Automatic</span>
+                        <span>•</span>
+                        <span>2 Seats</span>
+                        <span>•</span>
+                        <span>Petrol</span>
+                    </div>
+
+                    <div class="car-bottom">
+
+                        <div class="price">
+                            <strong>$450</strong>
+                            <span>/ day</span>
+                        </div>
+
+                        <a href="rent.html" class="small-btn">
+                            Rent Now
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section class="services-section" id="maintenance">
+
+    <div class="container">
+
+        <div class="section-heading center">
+
+            <div>
+                <span class="section-label">WHY ELITEDRIVE</span>
+                <h2>More Than Just <span>A Car</span></h2>
+            </div>
+
+            <p>
+                Everything you need for a smooth, comfortable and
+                worry-free driving experience.
+            </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+            <div class="service-card">
+
+                <div class="service-number">01</div>
+
+                <div class="service-icon">
+                    🚘
+                </div>
+
+                <h3>Premium Vehicles</h3>
+
+                <p>
+                    A carefully selected fleet of luxury,
+                    sports and family vehicles.
+                </p>
+
+                <a href="rent.html">Explore Fleet →</a>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-number">02</div>
+
+                <div class="service-icon">
+                    🔧
+                </div>
+
+                <h3>Car Maintenance</h3>
+
+                <p>
+                    Professional maintenance services
+                    to keep your vehicle performing perfectly.
+                </p>
+
+                <a href="#contact">Book Service →</a>
+
+            </div>
+
+
+            <div class="service-card" id="roadside">
+
+                <div class="service-number">03</div>
+
+                <div class="service-icon">
+                    🛟
+                </div>
+
+                <h3>24/7 Roadside</h3>
+
+                <p>
+                    Reliable roadside assistance whenever
+                    and wherever you need us.
+                </p>
+
+                <a href="#contact">Get Assistance →</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about-section" id="about">
+
+    <div class="container about-grid">
+
+        <div class="about-image">
+
+            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1400&q=85" alt="Luxury Car">
+
+            <div class="experience-box">
+                <strong>10+</strong>
+                <span>Years of<br>Excellence</span>
+            </div>
+
+        </div>
+
+
+        <div class="about-content">
+
+            <span class="section-label">ABOUT ELITEDRIVE</span>
+
+            <h2>
+                Your Journey.
+                <span>Our Passion.</span>
+            </h2>
+
+            <p>
+                At EliteDrive, we believe that renting a car should be
+                more than simply getting from one place to another.
+                It should be an experience.
+            </p>
+
+            <p>
+                From premium vehicles to reliable support, we are
+                committed to delivering comfort, style and confidence
+                every time you get behind the wheel.
+            </p>
+
+            <div class="about-features">
+
+                <div>
+                    <strong>01</strong>
+                    <span>Premium Fleet</span>
+                </div>
+
+                <div>
+                    <strong>02</strong>
+                    <span>Flexible Rental</span>
+                </div>
+
+                <div>
+                    <strong>03</strong>
+                    <span>24/7 Support</span>
+                </div>
+
+            </div>
+
+            <a href="#contact" class="gold-btn">
+                Get in Touch →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta-section">
+
+    <div class="container cta-content">
+
+        <span class="section-label">READY TO DRIVE?</span>
+
+        <h2>
+            Your Dream Car
+            <span>Is Waiting.</span>
+        </h2>
+
+        <p>
+            Book your next journey with EliteDrive today.
+        </p>
+
+        <a href="rent.html" class="gold-btn">
+            Start Your Journey →
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact-section" id="contact">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="section-label">CONTACT US</span>
+                <h2>Let's Start Your <span>Journey</span></h2>
+            </div>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+            <div class="contact-info">
+
+                <div class="contact-item">
+                    <span class="contact-icon">📍</span>
+                    <div>
+                        <strong>Our Location</strong>
+                        <p>Nablus, Palestine</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-icon">📞</span>
+                    <div>
+                        <strong>Phone</strong>
+                        <p>+970 59 000 0000</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-icon">✉</span>
+                    <div>
+                        <strong>Email</strong>
+                        <p>info@elitedrive.com</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <form class="contact-form" id="contactForm">
+
+                <div class="form-row">
+
+                    <input type="text" id="name" placeholder="Your Name" required>
+
+                    <input type="email" id="email" placeholder="Your Email" required>
+
+                </div>
+
+                <input type="text" id="subject" placeholder="Subject" required>
+
+                <textarea id="message" rows="6" placeholder="Your Message" required></textarea>
+
+                <button type="submit" class="gold-btn">
+                    Send Message →
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+
+            <a href="index.html" class="logo">
+                <span>ELITE</span><strong>DRIVE</strong>
+            </a>
+
+            <p>
+                Premium car rental and automotive services
+                designed around your journey.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Company</h4>
+
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+            <a href="#">Careers</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Services</h4>
+
+            <a href="rent.html">Car Rental</a>
+            <a href="#maintenance">Maintenance</a>
+            <a href="#roadside">Roadside Assistance</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Follow Us</h4>
+
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">WhatsApp</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <span>© 2026 EliteDrive. All rights reserved.</span>
+
+            <span>Luxury. Performance. Freedom.</span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

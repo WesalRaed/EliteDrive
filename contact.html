@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EliteDrive | Contact Us</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="contact-page">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                <span>ELITE</span><strong>DRIVE</strong>
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="index.html">Home</a>
+
+                <a href="rent.html">Rent a Car</a>
+
+                <a href="maintenance.html">Maintenance</a>
+
+                <a href="roadside.html">Roadside Assistance</a>
+
+                <a href="about.html">About Us</a>
+
+                <a href="contact.html" class="active">
+                    Contact Us
+                </a>
+
+            </nav>
+
+            <div class="nav-actions">
+
+                <a href="login.html" class="login-link">
+                    Login
+                </a>
+
+                <a href="signup.html" class="nav-btn">
+                    Sign Up
+                </a>
+
+            </div>
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="contact-hero">
+
+        <div class="contact-hero-overlay"></div>
+
+        <div class="container contact-hero-content">
+
+            <span class="eyebrow">
+                GET IN TOUCH
+            </span>
+
+            <h1>
+                Let's Talk.
+                <span>We're Here to Help.</span>
+            </h1>
+
+            <p>
+                Have a question about a vehicle, maintenance service,
+                or roadside assistance? Our team is ready to help.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT SECTION ================= -->
+
+    <section class="contact-section">
+
+        <div class="container contact-grid">
+
+
+            <!-- CONTACT INFO -->
+
+            <div class="contact-info">
+
+                <span class="eyebrow">
+                    CONTACT ELITEDRIVE
+                </span>
+
+                <h2>
+                    We're Always
+                    <span>Available.</span>
+                </h2>
+
+                <p>
+                    Whether you need help choosing a vehicle,
+                    booking a service, or simply have a question,
+                    feel free to reach out.
+                </p>
+
+
+                <div class="contact-details">
+
+                    <div class="contact-detail">
+
+                        <div class="contact-icon">
+                            ☎
+                        </div>
+
+                        <div>
+                            <strong>
+                                Phone
+                            </strong>
+
+                            <p>
+                                +970 599 000 000
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-detail">
+
+                        <div class="contact-icon">
+                            ✉
+                        </div>
+
+                        <div>
+                            <strong>
+                                Email
+                            </strong>
+
+                            <p>
+                                support@elitedrive.com
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-detail">
+
+                        <div class="contact-icon">
+                            ◉
+                        </div>
+
+                        <div>
+                            <strong>
+                                Location
+                            </strong>
+
+                            <p>
+                                Nablus, Palestine
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-detail">
+
+                        <div class="contact-icon">
+                            ◷
+                        </div>
+
+                        <div>
+                            <strong>
+                                Working Hours
+                            </strong>
+
+                            <p>
+                                Monday – Sunday
+                                <br>
+                                24/7 Support
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTACT FORM -->
+
+            <div class="contact-form-box">
+
+                <span class="eyebrow">
+                    SEND A MESSAGE
+                </span>
+
+                <h2>
+                    How Can We
+                    <span>Help?</span>
+                </h2>
+
+
+                <form id="contactForm">
+
+                    <div class="contact-form-grid">
+
+                        <div class="contact-field">
+
+                            <label>
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Your full name"
+                                required>
+
+                        </div>
+
+
+                        <div class="contact-field">
+
+                            <label>
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="you@example.com"
+                                required>
+
+                        </div>
+
+
+                        <div class="contact-field">
+
+                            <label>
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="contactPhone"
+                                placeholder="Your phone number">
+
+                        </div>
+
+
+                        <div class="contact-field">
+
+                            <label>
+                                Subject
+                            </label>
+
+                            <select
+                                id="subject"
+                                required>
+
+                                <option value="">
+                                    Select a subject
+                                </option>
+
+                                <option value="Car Rental">
+                                    Car Rental
+                                </option>
+
+                                <option value="Maintenance">
+                                    Maintenance
+                                </option>
+
+                                <option value="Roadside Assistance">
+                                    Roadside Assistance
+                                </option>
+
+                                <option value="General Question">
+                                    General Question
+                                </option>
+
+                                <option value="Other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="contact-field full-field">
+
+                            <label>
+                                Your Message
+                            </label>
+
+                            <textarea
+                                id="message"
+                                rows="6"
+                                placeholder="Write your message..."
+                                required></textarea>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="contact-submit">
+
+                        Send Message
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MAP ================= -->
+
+    <section class="contact-location">
+
+        <div class="container">
+
+            <div class="location-box">
+
+                <div class="location-content">
+
+                    <span class="eyebrow">
+                        FIND US
+                    </span>
+
+                    <h2>
+                        Visit
+                        <span>EliteDrive.</span>
+                    </h2>
+
+                    <p>
+                        Our team is ready to welcome you and
+                        help you find the right solution for
+                        your journey.
+                    </p>
+
+                    <div class="fake-map-pin">
+                        <span>📍</span>
+                        Nablus, Palestine
+                    </div>
+
+                </div>
+
+
+                <div class="map-placeholder">
+
+                    <div class="map-grid"></div>
+
+                    <div class="map-pin">
+                        📍
+                    </div>
+
+                    <span>
+                        EliteDrive
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div>
+
+                <a href="index.html" class="logo">
+                    <span>ELITE</span><strong>DRIVE</strong>
+                </a>
+
+                <p>
+                    Premium car rental and automotive services
+                    designed around your journey.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Quick Links
+                </h4>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="rent.html">
+                    Rent a Car
+                </a>
+
+                <a href="maintenance.html">
+                    Maintenance
+                </a>
+
+                <a href="roadside.html">
+                    Roadside Assistance
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Company
+                </h4>
+
+                <a href="about.html">
+                    About Us
+                </a>
+
+                <a href="contact.html">
+                    Contact Us
+                </a>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+                <a href="signup.html">
+                    Sign Up
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Contact
+                </h4>
+
+                <p>
+                    24/7 Customer Support
+                </p>
+
+                <p>
+                    support@elitedrive.com
+                </p>
+
+                <p>
+                    +970 599 000 000
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            © 2026 EliteDrive. All rights reserved.
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

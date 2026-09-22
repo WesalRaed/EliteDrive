@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EliteDrive | Roadside Assistance</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="roadside-page">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                <span>ELITE</span><strong>DRIVE</strong>
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="index.html">Home</a>
+
+                <a href="rent.html">
+                    Rent a Car
+                </a>
+
+                <a href="maintenance.html">
+                    Maintenance
+                </a>
+
+                <a href="roadside.html" class="active">
+                    Roadside Assistance
+                </a>
+
+                <a href="about.html">
+                    About Us
+                </a>
+
+                <a href="contact.html">
+                    Contact Us
+                </a>
+
+            </nav>
+
+            <div class="nav-actions">
+
+                <a href="login.html" class="login-link">
+                    Login
+                </a>
+
+                <a href="signup.html" class="nav-btn">
+                    Sign Up
+                </a>
+
+            </div>
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="roadside-hero">
+
+        <div class="roadside-overlay"></div>
+
+        <div class="container roadside-hero-content">
+
+            <span class="eyebrow">
+                24/7 EMERGENCY SUPPORT
+            </span>
+
+            <h1>
+                Help When
+                <span>You Need It.</span>
+            </h1>
+
+            <p>
+                Unexpected breakdown? Flat tire? Dead battery?
+                EliteDrive Roadside Assistance is here to help
+                wherever the road takes you.
+            </p>
+
+            <button
+                class="emergency-btn"
+                onclick="openAssistance()">
+
+                Request Assistance
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SERVICES ================= -->
+
+    <section class="roadside-services">
+
+        <div class="container">
+
+            <div class="section-heading center">
+
+                <span class="eyebrow">
+                    ROADSIDE SUPPORT
+                </span>
+
+                <h2>
+                    We've Got You
+                    <span>Covered.</span>
+                </h2>
+
+                <p>
+                    Fast and reliable roadside services designed
+                    to get you safely back on the road.
+                </p>
+
+            </div>
+
+
+            <div class="roadside-grid">
+
+                <div class="roadside-card">
+
+                    <div class="roadside-icon">
+                        🛞
+                    </div>
+
+                    <h3>
+                        Flat Tire
+                    </h3>
+
+                    <p>
+                        Assistance with flat or damaged tires
+                        whenever you need it.
+                    </p>
+
+                </div>
+
+
+                <div class="roadside-card">
+
+                    <div class="roadside-icon">
+                        🔋
+                    </div>
+
+                    <h3>
+                        Battery Jump Start
+                    </h3>
+
+                    <p>
+                        Quick battery assistance when your vehicle
+                        won't start.
+                    </p>
+
+                </div>
+
+
+                <div class="roadside-card">
+
+                    <div class="roadside-icon">
+                        ⛽
+                    </div>
+
+                    <h3>
+                        Fuel Delivery
+                    </h3>
+
+                    <p>
+                        Ran out of fuel? We'll help you get back
+                        on the road.
+                    </p>
+
+                </div>
+
+
+                <div class="roadside-card">
+
+                    <div class="roadside-icon">
+                        🔑
+                    </div>
+
+                    <h3>
+                        Lockout Assistance
+                    </h3>
+
+                    <p>
+                        Locked your keys inside your vehicle?
+                        Our team can assist.
+                    </p>
+
+                </div>
+
+
+                <div class="roadside-card">
+
+                    <div class="roadside-icon">
+                        🚗
+                    </div>
+
+                    <h3>
+                        Vehicle Towing
+                    </h3>
+
+                    <p>
+                        Professional towing assistance for
+                        vehicles that cannot continue driving.
+                    </p>
+
+                </div>
+
+
+                <div class="roadside-card">
+
+                    <div class="roadside-icon">
+                        🛠️
+                    </div>
+
+                    <h3>
+                        Emergency Repair
+                    </h3>
+
+                    <p>
+                        Basic roadside mechanical assistance
+                        to help get your vehicle moving again.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= EMERGENCY CTA ================= -->
+
+    <section class="roadside-cta">
+
+        <div class="container">
+
+            <div class="roadside-cta-box">
+
+                <div>
+
+                    <span class="eyebrow">
+                        NEED HELP NOW?
+                    </span>
+
+                    <h2>
+                        Don't Stay Stranded.
+                    </h2>
+
+                    <p>
+                        Request roadside assistance and
+                        tell us what happened.
+                    </p>
+
+                </div>
+
+                <button
+                    class="emergency-btn"
+                    onclick="openAssistance()">
+
+                    Get Help Now
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ASSISTANCE MODAL ================= -->
+
+    <div
+        class="assistance-modal"
+        id="assistanceModal">
+
+        <div class="assistance-modal-box">
+
+            <button
+                class="assistance-close"
+                onclick="closeAssistance()">
+
+                ×
+
+            </button>
+
+
+            <span class="eyebrow">
+                EMERGENCY REQUEST
+            </span>
+
+            <h2>
+                Request
+                <span>Assistance</span>
+            </h2>
+
+            <p class="assistance-subtitle">
+                Please provide your details and tell us
+                what happened.
+            </p>
+
+
+            <form id="assistanceForm">
+
+                <div class="assistance-form-grid">
+
+                    <div class="form-field">
+
+                        <label>
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="assistanceName"
+                            placeholder="Your full name"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-field">
+
+                        <label>
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="assistancePhone"
+                            placeholder="Your phone number"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-field full-field">
+
+                        <label>
+                            Vehicle Model
+                        </label>
+
+                        <input
+                            type="text"
+                            id="assistanceVehicle"
+                            placeholder="e.g. Mercedes C-Class"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-field full-field">
+
+                        <label>
+                            Problem
+                        </label>
+
+                        <select
+                            id="assistanceProblem"
+                            required>
+
+                            <option value="">
+                                Select the problem
+                            </option>
+
+                            <option value="Flat Tire">
+                                Flat Tire
+                            </option>
+
+                            <option value="Dead Battery">
+                                Dead Battery
+                            </option>
+
+                            <option value="Out of Fuel">
+                                Out of Fuel
+                            </option>
+
+                            <option value="Locked Out">
+                                Locked Out
+                            </option>
+
+                            <option value="Vehicle Breakdown">
+                                Vehicle Breakdown
+                            </option>
+
+                            <option value="Accident / Towing">
+                                Accident / Towing
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-field full-field">
+
+                        <label>
+                            Current Location
+                        </label>
+
+                        <input
+                            type="text"
+                            id="assistanceLocation"
+                            placeholder="Enter your current location"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-field full-field">
+
+                        <label>
+                            Additional Details
+                        </label>
+
+                        <textarea
+                            id="assistanceDetails"
+                            rows="4"
+                            placeholder="Describe the situation..."></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="assistance-submit">
+
+                    Send Assistance Request
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div>
+
+                <a href="index.html" class="logo">
+                    <span>ELITE</span><strong>DRIVE</strong>
+                </a>
+
+                <p>
+                    Premium car rental and automotive services
+                    designed around your journey.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Quick Links
+                </h4>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="rent.html">
+                    Rent a Car
+                </a>
+
+                <a href="maintenance.html">
+                    Maintenance
+                </a>
+
+                <a href="roadside.html">
+                    Roadside Assistance
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Company
+                </h4>
+
+                <a href="about.html">
+                    About Us
+                </a>
+
+                <a href="contact.html">
+                    Contact Us
+                </a>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+                <a href="signup.html">
+                    Sign Up
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Emergency Support
+                </h4>
+
+                <p>
+                    Available 24/7
+                </p>
+
+                <p>
+                    +970 599 000 000
+                </p>
+
+                <p>
+                    support@elitedrive.com
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            © 2026 EliteDrive. All rights reserved.
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+
+    <script>
+
+        // ================= ASSISTANCE MODAL =================
+
+        const assistanceModal =
+            document.getElementById("assistanceModal");
+
+        const assistanceForm =
+            document.getElementById("assistanceForm");
+
+
+        function openAssistance() {
+
+            assistanceModal.classList.add("active");
+
+        }
+
+
+        function closeAssistance() {
+
+            assistanceModal.classList.remove("active");
+
+        }
+
+
+        // ================= SUBMIT REQUEST =================
+
+        assistanceForm.addEventListener(
+            "submit",
+            function (event) {
+
+                event.preventDefault();
+
+
+                const name =
+                    document.getElementById("assistanceName")
+                        .value.trim();
+
+                const phone =
+                    document.getElementById("assistancePhone")
+                        .value.trim();
+
+                const vehicle =
+                    document.getElementById("assistanceVehicle")
+                        .value.trim();
+
+                const problem =
+                    document.getElementById("assistanceProblem")
+                        .value;
+
+                const location =
+                    document.getElementById("assistanceLocation")
+                        .value.trim();
+
+
+                if (
+                    !name ||
+                    !phone ||
+                    !vehicle ||
+                    !problem ||
+                    !location
+                ) {
+
+                    alert(
+                        "Please complete all required fields."
+                    );
+
+                    return;
+
+                }
+
+
+                alert(
+"Assistance Request Submitted!\n\n" +
+                 "Customer: " + name + "\n" +
+"Vehicle: " + vehicle + "\n" +
+"Problem: " + problem + "\n" +
+"Location: " + location + "\n\n" +
+"Our roadside assistance team will contact you shortly."
+            );
+
+
+                assistanceForm.reset();
+
+                closeAssistance();
+
+            }
+        );
+
+
+        // Close modal by clicking outside
+
+        assistanceModal.addEventListener(
+            "click",
+            function (event) {
+
+                if (event.target === assistanceModal) {
+
+                    closeAssistance();
+
+                }
+
+            }
+        );
+
+    </script>
+
+</body>
+
+</html>

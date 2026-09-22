@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EliteDrive | Login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-page">
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                <span>ELITE</span><strong>DRIVE</strong>
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="index.html">Home</a>
+                <a href="rent.html">Rent a Car</a>
+                <a href="maintenance.html">Maintenance</a>
+                <a href="roadside.html">Roadside Assistance</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+
+            </nav>
+
+            <div class="nav-actions">
+
+                <a href="login.html" class="login-link active">
+                    Login
+                </a>
+
+                <a href="signup.html" class="nav-btn">
+                    Sign Up
+                </a>
+
+            </div>
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main class="auth-main">
+
+        <div class="auth-container">
+
+            <div class="auth-image">
+
+                <div class="auth-image-overlay"></div>
+
+                <div class="auth-image-content">
+
+                    <span class="eyebrow">
+                        WELCOME BACK
+                    </span>
+
+                    <h1>
+                        Your Journey
+                        <span>Starts Here.</span>
+                    </h1>
+
+                    <p>
+                        Sign in to manage your bookings,
+                        access your account, and continue
+                        your journey with EliteDrive.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="auth-form-container">
+
+                <div class="auth-form">
+
+                    <span class="eyebrow">
+                        ELITEDRIVE ACCOUNT
+                    </span>
+
+                    <h2>
+                        Welcome <span>Back.</span>
+                    </h2>
+
+                    <p class="auth-subtitle">
+                        Enter your details to access your account.
+                    </p>
+
+
+                    <form id="loginForm">
+
+                        <div class="auth-field">
+
+                            <label for="loginEmail">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="loginEmail"
+                                placeholder="you@example.com"
+                                required>
+
+                        </div>
+
+
+                        <div class="auth-field">
+
+                            <label for="loginPassword">
+                                Password
+                            </label>
+
+                            <input
+                                type="password"
+                                id="loginPassword"
+                                placeholder="Enter your password"
+                                required>
+
+                        </div>
+
+
+                        <div class="auth-options">
+
+                            <label class="remember-me">
+
+                                <input
+                                    type="checkbox"
+                                    id="rememberMe">
+
+                                <span>
+                                    Remember me
+                                </span>
+
+                            </label>
+
+                            <a href="#" id="forgotPassword">
+                                Forgot Password?
+                            </a>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="auth-submit">
+
+                            Login
+
+                        </button>
+
+                    </form>
+
+
+                    <div class="auth-divider">
+                        <span>OR</span>
+                    </div>
+
+
+                    <p class="auth-switch">
+
+                        Don't have an account?
+
+                        <a href="signup.html">
+                            Create Account
+                        </a>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div>
+
+                <a href="index.html" class="logo">
+                    <span>ELITE</span><strong>DRIVE</strong>
+                </a>
+
+                <p>
+                    Premium car rental and automotive services
+                    designed around your journey.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>Quick Links</h4>
+
+                <a href="index.html">Home</a>
+                <a href="rent.html">Rent a Car</a>
+                <a href="maintenance.html">Maintenance</a>
+                <a href="roadside.html">Roadside Assistance</a>
+
+            </div>
+
+
+            <div>
+
+                <h4>Company</h4>
+
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html">Sign Up</a>
+
+            </div>
+
+
+            <div>
+
+                <h4>Contact</h4>
+
+                <p>24/7 Customer Support</p>
+                <p>support@elitedrive.com</p>
+                <p>+970 599 000 000</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            © 2026 EliteDrive. All rights reserved.
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+    <script>
+
+        const loginForm =
+            document.getElementById("loginForm");
+
+        if (loginForm) {
+
+            loginForm.addEventListener(
+                "submit",
+                function(event) {
+
+                    event.preventDefault();
+
+                    const email =
+                        document.getElementById("loginEmail").value;
+
+                    alert(
+                        "Login successful!\n\n" +
+                        "Welcome back!\n" +
+                        "Account: " + email
+                    );
+
+                    loginForm.reset();
+
+                }
+            );
+
+        }
+
+
+        const forgotPassword =
+            document.getElementById("forgotPassword");
+
+        if (forgotPassword) {
+
+            forgotPassword.addEventListener(
+                "click",
+                function(event) {
+
+                    event.preventDefault();
+
+                    const email =
+                        prompt(
+                            "Please enter your email address:"
+                        );
+
+                    if (email) {
+
+                        alert(
+                            "Password reset instructions " +
+                            "have been sent to " + email
+                        );
+
+                    }
+
+                }
+            );
+
+        }
+
+    </script>
+
+</body>
+
+</html>

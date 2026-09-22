@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EliteDrive | Rent a Car</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="rent-page">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                <span>ELITE</span><strong>DRIVE</strong>
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="index.html">Home</a>
+
+                <a href="rent.html" class="active">
+                    Rent a Car
+                </a>
+
+                <a href="maintenance.html">
+                    Maintenance
+                </a>
+
+                <a href="roadside.html">
+                    Roadside Assistance
+                </a>
+
+                <a href="about.html">
+                    About Us
+                </a>
+
+                <a href="contact.html">
+                    Contact Us
+                </a>
+
+            </nav>
+
+            <div class="nav-actions">
+
+                <a href="login.html" class="login-link">
+                    Login
+                </a>
+
+                <a href="signup.html" class="nav-btn">
+                    Sign Up
+                </a>
+
+            </div>
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- ================= RENT HERO ================= -->
+
+    <section class="rent-hero">
+
+        <div class="rent-hero-overlay"></div>
+
+        <div class="container rent-hero-content">
+
+            <p class="eyebrow">
+                PREMIUM VEHICLE RENTAL
+            </p>
+
+            <h1>
+                Find Your
+                <span>Perfect Car.</span>
+            </h1>
+
+            <p class="rent-hero-text">
+                Choose from our premium fleet and enjoy
+                a smooth, comfortable and unforgettable
+                driving experience.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FILTERS ================= -->
+
+    <section class="rent-filter-section">
+
+        <div class="container">
+
+            <div class="rent-filter-box">
+
+                <div class="filter-heading">
+
+                    <span class="filter-icon">⚙</span>
+
+                    <div>
+                        <h3>Find Your Car</h3>
+                        <p>Filter our available vehicles</p>
+                    </div>
+
+                </div>
+
+
+                <div class="filter-controls">
+
+                    <!-- TYPE -->
+
+                    <div class="filter-group">
+
+                        <label for="typeFilter">
+                            Vehicle Type
+                        </label>
+
+                        <select id="typeFilter">
+
+                            <option value="all">
+                                All Types
+                            </option>
+
+                            <option value="sedan">
+                                Sedan
+                            </option>
+
+                            <option value="suv">
+                                SUV
+                            </option>
+
+                            <option value="sports">
+                                Sports
+                            </option>
+
+                            <option value="luxury">
+                                Luxury
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- TRANSMISSION -->
+
+                    <div class="filter-group">
+
+                        <label for="transmissionFilter">
+                            Transmission
+                        </label>
+
+                        <select id="transmissionFilter">
+
+                            <option value="all">
+                                All
+                            </option>
+
+                            <option value="automatic">
+                                Automatic
+                            </option>
+
+                            <option value="manual">
+                                Manual
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- PRICE -->
+
+                    <div class="filter-group">
+
+                        <label for="priceFilter">
+                            Maximum Price
+                        </label>
+
+                        <select id="priceFilter">
+
+                            <option value="9999">
+                                Any Price
+                            </option>
+
+                            <option value="100">
+                                Up to $100 / day
+                            </option>
+
+                            <option value="150">
+                                Up to $150 / day
+                            </option>
+
+                            <option value="250">
+                                Up to $250 / day
+                            </option>
+
+                            <option value="500">
+                                Up to $500 / day
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <button
+                        class="clear-filter"
+                        onclick="clearFilters()">
+
+                        Clear Filters
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CARS ================= -->
+
+    <section class="rent-cars">
+
+        <div class="container">
+
+            <div class="rent-top">
+
+                <div>
+
+                    <p class="eyebrow">
+                        OUR FLEET
+                    </p>
+
+                    <h2>
+                        Choose Your
+                        <span>Ride.</span>
+                    </h2>
+
+                </div>
+
+                <div
+                    id="carCount"
+                    class="car-count">
+
+                    6 Vehicles Available
+
+                </div>
+
+            </div>
+
+
+            <div class="rent-grid" id="rentGrid">
+
+
+                <!-- BMW -->
+
+                <article
+                    class="rent-car-card"
+                    data-type="luxury sedan"
+                    data-transmission="automatic"
+                    data-price="120">
+
+                    <div class="rent-car-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1200&q=85"
+                            alt="BMW 5 Series">
+
+                        <span class="car-badge">
+                            POPULAR
+                        </span>
+
+                    </div>
+
+
+                    <div class="rent-car-info">
+
+                        <p class="car-category">
+                            LUXURY SEDAN
+                        </p>
+
+                        <h3>
+                            BMW 5 Series
+                        </h3>
+
+                        <div class="car-specs">
+
+                            <span>⚙ Automatic</span>
+                            <span>👤 5 Seats</span>
+                            <span>⛽ Petrol</span>
+
+                        </div>
+
+
+                        <div class="rent-card-bottom">
+
+                            <div class="car-price">
+                                <strong>$120</strong>
+                                <span>/ day</span>
+                            </div>
+
+                            <div class="card-actions">
+
+                                <button
+                                    class="details-btn"
+                                    onclick="showDetails(
+                                        'BMW 5 Series',
+                                        120,
+                                        'https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1200&q=85',
+                                        'The BMW 5 Series combines luxury, comfort and impressive performance for an unforgettable driving experience.'
+                                    )">
+
+                                    Details
+
+                                </button>
+
+                                <button
+                                    class="book-btn"
+                                    onclick="openBooking('BMW 5 Series', 120)">
+
+                                    Book Now
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MERCEDES -->
+
+                <article
+                    class="rent-car-card"
+                    data-type="luxury sedan"
+                    data-transmission="automatic"
+                    data-price="135">
+
+                    <div class="rent-car-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1200&q=85"
+                            alt="Mercedes C-Class">
+
+                    </div>
+
+
+                    <div class="rent-car-info">
+
+                        <p class="car-category">
+                            LUXURY SEDAN
+                        </p>
+
+                        <h3>
+                            Mercedes C-Class
+                        </h3>
+
+                        <div class="car-specs">
+
+                            <span>⚙ Automatic</span>
+                            <span>👤 5 Seats</span>
+                            <span>⛽ Petrol</span>
+
+                        </div>
+
+
+                        <div class="rent-card-bottom">
+
+                            <div class="car-price">
+
+                                <strong>$135</strong>
+                                <span>/ day</span>
+
+                            </div>
+
+                            <div class="card-actions">
+
+                                <button
+                                    class="details-btn"
+                                    onclick="showDetails(
+                                        'Mercedes C-Class',
+                                        135,
+                                        'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1200&q=85',
+                                        'A sophisticated Mercedes-Benz sedan offering premium comfort, elegant design and a smooth driving experience.'
+                                    )">
+
+                                    Details
+
+                                </button>
+
+                                <button
+                                    class="book-btn"
+                                    onclick="openBooking('Mercedes C-Class', 135)">
+
+                                    Book Now
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- LAMBORGHINI -->
+
+                <article
+                    class="rent-car-card"
+                    data-type="sports"
+                    data-transmission="automatic"
+                    data-price="450">
+
+                    <div class="rent-car-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1200&q=85"
+                            alt="Lamborghini Huracan">
+
+                        <span class="car-badge premium">
+                            PREMIUM
+                        </span>
+
+                    </div>
+
+
+                    <div class="rent-car-info">
+
+                        <p class="car-category">
+                            SPORTS CAR
+                        </p>
+
+                        <h3>
+                            Lamborghini Huracan
+                        </h3>
+
+                        <div class="car-specs">
+
+                            <span>⚙ Automatic</span>
+                            <span>👤 2 Seats</span>
+                            <span>⛽ Petrol</span>
+
+                        </div>
+
+
+                        <div class="rent-card-bottom">
+
+                            <div class="car-price">
+
+                                <strong>$450</strong>
+                                <span>/ day</span>
+
+                            </div>
+
+                            <div class="card-actions">
+
+                                <button
+                                    class="details-btn"
+                                    onclick="showDetails(
+                                        'Lamborghini Huracan',
+                                        450,
+                                        'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1200&q=85',
+                                        'Experience extraordinary performance and iconic Italian design with the Lamborghini Huracan.'
+                                    )">
+
+                                    Details
+
+                                </button>
+
+                                <button
+                                    class="book-btn"
+                                    onclick="openBooking('Lamborghini Huracan', 450)">
+
+                                    Book Now
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- RANGE ROVER -->
+
+                <article
+                    class="rent-car-card"
+                    data-type="suv luxury"
+                    data-transmission="automatic"
+                    data-price="220">
+
+                    <div class="rent-car-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1200&q=85"
+                            alt="Range Rover Sport">
+
+                    </div>
+
+
+                    <div class="rent-car-info">
+
+                        <p class="car-category">
+                            LUXURY SUV
+                        </p>
+
+                        <h3>
+                            Range Rover Sport
+                        </h3>
+
+                        <div class="car-specs">
+
+                            <span>⚙ Automatic</span>
+                            <span>👤 5 Seats</span>
+                            <span>⛽ Petrol</span>
+
+                        </div>
+
+
+                        <div class="rent-card-bottom">
+
+                            <div class="car-price">
+
+                                <strong>$220</strong>
+                                <span>/ day</span>
+
+                            </div>
+
+                            <div class="card-actions">
+
+                                <button
+                                    class="details-btn"
+                                    onclick="showDetails(
+                                        'Range Rover Sport',
+                                        220,
+                                        'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1200&q=85',
+                                        'A powerful luxury SUV delivering premium comfort, advanced technology and confident performance.'
+                                    )">
+
+                                    Details
+
+                                </button>
+
+                                <button
+                                    class="book-btn"
+                                    onclick="openBooking('Range Rover Sport', 220)">
+
+                                    Book Now
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- AUDI -->
+
+                <article
+                    class="rent-car-card"
+                    data-type="sedan luxury"
+                    data-transmission="automatic"
+                    data-price="110">
+
+                    <div class="rent-car-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1200&q=85"
+                            alt="Audi A6">
+
+                    </div>
+
+
+                    <div class="rent-car-info">
+
+                        <p class="car-category">
+                            PREMIUM SEDAN
+                        </p>
+
+                        <h3>
+                            Audi A6
+                        </h3>
+
+                        <div class="car-specs">
+
+                            <span>⚙ Automatic</span>
+                            <span>👤 5 Seats</span>
+                            <span>⛽ Petrol</span>
+
+                        </div>
+
+
+                        <div class="rent-card-bottom">
+
+                            <div class="car-price">
+
+                                <strong>$110</strong>
+                                <span>/ day</span>
+
+                            </div>
+
+                            <div class="card-actions">
+
+                                <button
+                                    class="details-btn"
+                                    onclick="showDetails(
+                                        'Audi A6',
+                                        110,
+                                        'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1200&q=85',
+                                        'The Audi A6 offers refined luxury, modern technology and exceptional comfort for business or leisure trips.'
+                                    )">
+
+                                    Details
+
+                                </button>
+
+                                <button
+                                    class="book-btn"
+                                    onclick="openBooking('Audi A6', 110)">
+
+                                    Book Now
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PORSCHE -->
+
+                <article
+                    class="rent-car-card"
+                    data-type="sports luxury"
+                    data-transmission="automatic"
+                    data-price="300">
+
+                    <div class="rent-car-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=85"
+                            alt="Porsche 911">
+
+                        <span class="car-badge premium">
+                            PREMIUM
+                        </span>
+
+                    </div>
+
+
+                    <div class="rent-car-info">
+
+                        <p class="car-category">
+                            SPORTS CAR
+                        </p>
+
+                        <h3>
+                            Porsche 911
+                        </h3>
+
+                        <div class="car-specs">
+
+                            <span>⚙ Automatic</span>
+                            <span>👤 2 Seats</span>
+                            <span>⛽ Petrol</span>
+
+                        </div>
+
+
+                        <div class="rent-card-bottom">
+
+                            <div class="car-price">
+
+                                <strong>$300</strong>
+                                <span>/ day</span>
+
+                            </div>
+
+                            <div class="card-actions">
+
+                                <button
+                                    class="details-btn"
+                                    onclick="showDetails(
+                                        'Porsche 911',
+                                        300,
+                                        'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=85',
+                                        'The Porsche 911 delivers legendary performance, precision handling and an unmistakable sports-car experience.'
+                                    )">
+
+                                    Details
+
+                                </button>
+
+                                <button
+                                    class="book-btn"
+                                    onclick="openBooking('Porsche 911', 300)">
+
+                                    Book Now
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BOOKING MODAL ================= -->
+
+    <div
+        class="modal"
+        id="bookingModal">
+
+        <div class="modal-box booking-modal">
+
+            <button
+                class="modal-close"
+                onclick="closeModal('bookingModal')">
+
+                ×
+
+            </button>
+
+
+            <p class="eyebrow">
+                RESERVATION
+            </p>
+
+            <h2>
+                Book Your
+                <span>Car</span>
+            </h2>
+
+            <p class="selected-car-text">
+                Selected vehicle:
+                <strong id="selectedCar">
+                    —
+                </strong>
+            </p>
+
+
+            <form
+                id="bookingForm"
+                class="booking-form"
+                onsubmit="confirmBooking(event)">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="customerName">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="customerName"
+                            placeholder="Enter your name"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="customerEmail">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="customerEmail"
+                            placeholder="Enter your email"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="customerPhone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="customerPhone"
+                            placeholder="Enter your phone"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="pickupLocation">
+                            Pick-up Location
+                        </label>
+
+                        <input
+                            type="text"
+                            id="pickupLocation"
+                            placeholder="Enter location"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="pickupDate">
+                            Pick-up Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="pickupDate"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="returnDate">
+                            Return Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="returnDate"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <div class="total-box">
+
+                    <span>
+                        Estimated Total
+                    </span>
+
+                    <strong id="totalPrice">
+                        $0
+                    </strong>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="confirm-btn">
+
+                    Confirm Booking
+                    <span>→</span>
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= DETAILS MODAL ================= -->
+
+    <div
+        class="modal"
+        id="detailsModal">
+
+        <div class="modal-box details-modal">
+
+            <button
+                class="modal-close"
+                onclick="closeModal('detailsModal')">
+
+                ×
+
+            </button>
+
+
+            <div class="details-content">
+
+                <img
+                    id="detailsImage"
+                    src=""
+                    alt="Car">
+
+                <div class="details-info">
+
+                    <p class="eyebrow">
+                        VEHICLE DETAILS
+                    </p>
+
+                    <h2 id="detailsTitle">
+                        Car Details
+                    </h2>
+
+                    <p
+                        id="detailsDescription"
+                        class="details-description">
+                    </p>
+
+
+                    <button
+                        id="detailsBookButton"
+                        class="confirm-btn">
+
+                        Book This Car
+                        <span>→</span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo">
+                    <span>ELITE</span><strong>DRIVE</strong>
+                </a>
+
+                <p>
+                    Premium cars. Exceptional service.
+                    Every journey deserves the best.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>Quick Links</h4>
+
+                <a href="index.html">Home</a>
+                <a href="rent.html">Rent a Car</a>
+                <a href="maintenance.html">Maintenance</a>
+                <a href="about.html">About Us</a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>Services</h4>
+
+                <a href="rent.html">
+                    Car Rental
+                </a>
+
+                <a href="maintenance.html">
+                    Maintenance
+                </a>
+
+                <a href="roadside.html">
+                    Roadside Assistance
+                </a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>Contact</h4>
+
+                <a href="contact.html">
+                    Contact Us
+                </a>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+                <a href="signup.html">
+                    Create Account
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    © 2026 EliteDrive. All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+<script src="script.js"></script>
+<script src="rent.js"></script>
+</body>
+
+</html>

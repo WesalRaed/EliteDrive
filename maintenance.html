@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EliteDrive | Maintenance</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="maintenance-page">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                <span>ELITE</span><strong>DRIVE</strong>
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="index.html">Home</a>
+
+                <a href="rent.html">Rent a Car</a>
+
+                <a href="maintenance.html" class="active">
+                    Maintenance
+                </a>
+
+                <a href="roadside.html">
+                    Roadside Assistance
+                </a>
+
+                <a href="about.html">
+                    About Us
+                </a>
+
+                <a href="contact.html">
+                    Contact Us
+                </a>
+
+            </nav>
+
+            <div class="nav-actions">
+
+                <a href="login.html" class="login-link">
+                    Login
+                </a>
+
+                <a href="signup.html" class="nav-btn">
+                    Sign Up
+                </a>
+
+            </div>
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="maintenance-hero">
+
+        <div class="maintenance-hero-overlay"></div>
+
+        <div class="container maintenance-hero-content">
+
+            <span class="eyebrow">
+                PROFESSIONAL CAR CARE
+            </span>
+
+            <h1>
+                Keep Your Car
+                <span>At Its Best.</span>
+            </h1>
+
+            <p>
+                Expert maintenance and professional automotive care
+                designed to keep your vehicle safe, reliable, and road-ready.
+            </p>
+
+            <a href="#services" class="gold-btn">
+                Explore Services
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= INTRO ================= -->
+
+    <section class="maintenance-intro">
+
+        <div class="container">
+
+            <div class="section-heading center">
+
+                <span class="eyebrow">
+                    ELITEDRIVE CARE
+                </span>
+
+                <h2>
+                    Professional Maintenance.
+                    <span>Exceptional Care.</span>
+                </h2>
+
+                <p>
+                    From routine maintenance to advanced diagnostics,
+                    our experienced technicians provide the care your
+                    vehicle deserves.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SERVICES ================= -->
+
+    <section class="maintenance-services" id="services">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="eyebrow">
+                    OUR SERVICES
+                </span>
+
+                <h2>
+                    Complete Vehicle
+                    <span>Care</span>
+                </h2>
+
+            </div>
+
+
+            <div class="maintenance-grid">
+
+                <!-- SERVICE 1 -->
+
+                <div class="maintenance-card">
+
+                    <div class="maintenance-icon">
+                        🔧
+                    </div>
+
+                    <h3>
+                        Vehicle Inspection
+                    </h3>
+
+                    <p>
+                        A complete inspection to identify potential
+                        problems before they become expensive repairs.
+                    </p>
+
+                    <button
+                        class="service-btn"
+                        onclick="openService('Vehicle Inspection')">
+                        Book Service
+                    </button>
+
+                </div>
+
+
+                <!-- SERVICE 2 -->
+
+                <div class="maintenance-card">
+
+                    <div class="maintenance-icon">
+                        🛢️
+                    </div>
+
+                    <h3>
+                        Oil & Filter Change
+                    </h3>
+
+                    <p>
+                        Keep your engine running smoothly with
+                        professional oil and filter replacement.
+                    </p>
+
+                    <button
+                        class="service-btn"
+                        onclick="openService('Oil & Filter Change')">
+                        Book Service
+                    </button>
+
+                </div>
+
+
+                <!-- SERVICE 3 -->
+
+                <div class="maintenance-card">
+
+                    <div class="maintenance-icon">
+                        🛑
+                    </div>
+
+                    <h3>
+                        Brake Service
+                    </h3>
+
+                    <p>
+                        Professional brake inspection and servicing
+                        for safer and more confident driving.
+                    </p>
+
+                    <button
+                        class="service-btn"
+                        onclick="openService('Brake Service')">
+                        Book Service
+                    </button>
+
+                </div>
+
+
+                <!-- SERVICE 4 -->
+
+                <div class="maintenance-card">
+
+                    <div class="maintenance-icon">
+                        🛞
+                    </div>
+
+                    <h3>
+                        Tire Service
+                    </h3>
+
+                    <p>
+                        Tire inspection, pressure checks, rotation,
+                        and professional tire care.
+                    </p>
+
+                    <button
+                        class="service-btn"
+                        onclick="openService('Tire Service')">
+                        Book Service
+                    </button>
+
+                </div>
+
+
+                <!-- SERVICE 5 -->
+
+                <div class="maintenance-card">
+
+                    <div class="maintenance-icon">
+                        🔋
+                    </div>
+
+                    <h3>
+                        Battery Check
+                    </h3>
+
+                    <p>
+                        Battery testing and inspection to help prevent
+                        unexpected starting problems.
+                    </p>
+
+                    <button
+                        class="service-btn"
+                        onclick="openService('Battery Check')">
+                        Book Service
+                    </button>
+
+                </div>
+
+
+                <!-- SERVICE 6 -->
+
+                <div class="maintenance-card">
+
+                    <div class="maintenance-icon">
+                        ⚙️
+                    </div>
+
+                    <h3>
+                        Engine Diagnostics
+                    </h3>
+
+                    <p>
+                        Advanced diagnostics to identify engine and
+                        electronic system problems.
+                    </p>
+
+                    <button
+                        class="service-btn"
+                        onclick="openService('Engine Diagnostics')">
+                        Book Service
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BOOKING MODAL ================= -->
+
+    <div class="maintenance-modal" id="maintenanceModal">
+
+        <div class="maintenance-modal-box">
+
+            <button
+                class="maintenance-close"
+                onclick="closeMaintenanceModal()">
+                ×
+            </button>
+
+            <span class="eyebrow">
+                SERVICE APPOINTMENT
+            </span>
+
+            <h2>
+                Book Your
+                <span>Service</span>
+            </h2>
+
+            <p class="selected-service">
+                Selected service:
+                <strong id="selectedService">
+                    Vehicle Inspection
+                </strong>
+            </p>
+
+
+            <form id="maintenanceForm">
+
+                <div class="maintenance-form-grid">
+
+                    <div class="form-field">
+
+                        <label>
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="serviceName"
+                            placeholder="Your full name"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-field">
+
+                        <label>
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="servicePhone"
+                            placeholder="Your phone number"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-field">
+
+                        <label>
+                            Car Model
+                        </label>
+
+                        <input
+                            type="text"
+                            id="carModel"
+                            placeholder="e.g. BMW 5 Series"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-field">
+
+                        <label>
+                            Service Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="serviceDate"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-field full-field">
+
+                        <label>
+                            Preferred Time
+                        </label>
+
+                        <select id="serviceTime" required>
+
+                            <option value="">
+                                Select a time
+                            </option>
+
+                            <option value="09:00 AM">
+                                09:00 AM
+                            </option>
+
+                            <option value="10:00 AM">
+                                10:00 AM
+                            </option>
+
+                            <option value="11:00 AM">
+                                11:00 AM
+                            </option>
+
+                            <option value="12:00 PM">
+                                12:00 PM
+                            </option>
+
+                            <option value="01:00 PM">
+                                01:00 PM
+                            </option>
+
+                            <option value="02:00 PM">
+                                02:00 PM
+                            </option>
+
+                            <option value="03:00 PM">
+                                03:00 PM
+                            </option>
+
+                            <option value="04:00 PM">
+                                04:00 PM
+                            </option>
+
+                            <option value="05:00 PM">
+                                05:00 PM
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-field full-field">
+
+                        <label>
+                            Additional Notes
+                        </label>
+
+                        <textarea
+                            id="serviceNotes"
+                            rows="4"
+                            placeholder="Tell us anything we should know about your vehicle...">
+                        </textarea>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="maintenance-submit">
+
+                    Confirm Appointment
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div>
+
+                <a href="index.html" class="logo">
+                    <span>ELITE</span><strong>DRIVE</strong>
+                </a>
+
+                <p>
+                    Premium car rental and automotive services
+                    designed around your journey.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Quick Links
+                </h4>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="rent.html">
+                    Rent a Car
+                </a>
+
+                <a href="maintenance.html">
+                    Maintenance
+                </a>
+
+                <a href="roadside.html">
+                    Roadside Assistance
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Company
+                </h4>
+
+                <a href="about.html">
+                    About Us
+                </a>
+
+                <a href="contact.html">
+                    Contact Us
+                </a>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+                <a href="signup.html">
+                    Sign Up
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Contact
+                </h4>
+
+                <p>
+                    24/7 Customer Support
+                </p>
+
+                <p>
+                    support@elitedrive.com
+                </p>
+
+                <p>
+                    +970 599 000 000
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            © 2026 EliteDrive. All rights reserved.
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+    <script>
+        // ================= SERVICE BOOKING =================
+
+        const maintenanceModal =
+            document.getElementById("maintenanceModal");
+
+        const maintenanceForm =
+            document.getElementById("maintenanceForm");
+
+        const serviceDate =
+            document.getElementById("serviceDate");
+
+        let selectedMaintenanceService = "";
+
+
+        // Minimum date = today
+
+        const todayMaintenance =
+            new Date().toISOString().split("T")[0];
+
+        if (serviceDate) {
+            serviceDate.min = todayMaintenance;
+        }
+
+
+        // Open booking modal
+
+        function openService(service) {
+
+            selectedMaintenanceService = service;
+
+            document.getElementById("selectedService")
+                .textContent = service;
+
+            maintenanceModal.classList.add("active");
+
+        }
+
+
+        // Close booking modal
+
+        function closeMaintenanceModal() {
+
+            maintenanceModal.classList.remove("active");
+
+        }
+
+
+        // Submit booking
+
+        maintenanceForm.addEventListener(
+            "submit",
+            function (event) {
+
+                event.preventDefault();
+
+                const name =
+                    document.getElementById("serviceName").value.trim();
+
+                const phone =
+                    document.getElementById("servicePhone").value.trim();
+
+                const car =
+                    document.getElementById("carModel").value.trim();
+
+                const date =
+                    document.getElementById("serviceDate").value;
+
+                const time =
+                    document.getElementById("serviceTime").value;
+
+
+                if (!name || !phone || !car || !date || !time) {
+
+                    alert(
+                        "Please complete all required fields."
+                    );
+
+                    return;
+
+                }
+
+
+                alert(
+                    "Service Appointment Confirmed!\\n\\n" +
+
+                    "Customer: " + name + "\\n" +
+
+                    "Service: " +
+                    selectedMaintenanceService + "\\n" +
+
+                    "Vehicle: " + car + "\\n" +
+
+                    "Date: " + date + "\\n" +
+
+                    "Time: " + time + "\\n\\n" +
+
+                    "We will contact you shortly to confirm your appointment."
+                );
+
+
+                maintenanceForm.reset();
+
+                closeMaintenanceModal();
+
+            }
+        );
+
+
+        // Close by clicking outside
+
+        maintenanceModal.addEventListener(
+            "click",
+            function (event) {
+
+                if (event.target === maintenanceModal) {
+
+                    closeMaintenanceModal();
+
+                }
+
+            }
+        );
+    </script>
+
+</body>
+
+</html>
